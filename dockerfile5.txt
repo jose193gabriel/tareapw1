@@ -37,6 +37,7 @@ RUN chmod +x /usr/lib/cgi-bin/imc.pl
 
 COPY ./html/index.html /var/www/html/
 COPY ./html/mystyle.css /var/www/html/
+RUN chmod +x /var/www/html/mystyle.css
 
 # Copiar las imágenes a la carpeta de Apache
 COPY ./img /var/www/html/img
